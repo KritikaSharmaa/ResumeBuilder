@@ -1,4 +1,9 @@
+import { useState } from "react";
+import { useHistory } from "react-router-dom";
+import { auth } from "../firebase";
 const LogIn = () => {
+  let history = useHistory();
+  const [Credentials, SetCredentails] = useState({ email: "", password: "" });
   return (
     <>
       <div>
@@ -13,6 +18,13 @@ const LogIn = () => {
                     type="email"
                     className="w-full h-8 rounded border-none pl-2 outline-none"
                     placeholder="Enter Email"
+                    value={Credentials.email}
+                    onChange={(e) =>
+                      SetCredentails({
+                        ...Credentials,
+                        email: e.currentTarget.value,
+                      })
+                    }
                   />
                 </div>
                 <div className="w-full">
@@ -21,14 +33,32 @@ const LogIn = () => {
                     type="password"
                     className="w-full h-8 rounded border-none pl-2 outline-none"
                     placeholder="Password"
+                    value={Credentials.password}
+                    onChange={(e) =>
+                      SetCredentails({
+                        ...Credentials,
+                        password: e.currentTarget.value,
+                      })
+                    }
                   />
                 </div>
-                <button className="block mt-4 w-3/5 h-8 rounded bg-BabyPink border-none outline-none text-MateBlack font-semibold ">
+                <button
+                  className="block mt-4 w-3/5 h-8 rounded bg-BabyPink border-none outline-none text-MateBlack font-semibold"
+                  onClick={() =>{
+                    auth.signInWithEmailAndPassword(Credentials.email,Credentials.password).then(()=>{history.push("/")})
+                      .catch((error)=>{
+                        alert(error.message);
+                      })
+                    }}
+                >
                   Login
                 </button>
                 <div className="mt-8 text-white">
                   Don't have an account ?
-                  <span className="text-BabyPink font-semibold ml-1 cursor-pointer">
+                  <span
+                    className="text-BabyPink font-semibold ml-1 cursor-pointer"
+                    onClick={() => history.push("/SignIn")}
+                  >
                     SignUp
                   </span>
                 </div>

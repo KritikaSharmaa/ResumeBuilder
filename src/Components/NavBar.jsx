@@ -1,4 +1,7 @@
+import Logo from "../images/Logo.png";
+import { useHistory } from "react-router";
 const NavBar = ({ type }) => {
+  let history = useHistory();
   return (
     <div
       className={`h-20 flex justify-between ${
@@ -6,6 +9,7 @@ const NavBar = ({ type }) => {
       }`}
     >
       <div className="flex items-center text-3xl font-semibold text-LightPurple ml-1">
+        <img src={Logo} alt="img" className="h-12 w-12 bg-cover"></img>
         Resume Builder
       </div>
       <div className="h-full w-8/12 hidden lg:flex justify-end items-center cursor-default">
@@ -29,6 +33,7 @@ const NavBar = ({ type }) => {
           <button
             className="h-10 w-24 rounded-3xl text-white font-semibold
          bg-LightPurple flex justify-center items-center border-none"
+            onClick={() => history.push("/templates")}
           >
             Templates
           </button>

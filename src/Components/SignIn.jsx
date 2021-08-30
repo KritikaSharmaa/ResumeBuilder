@@ -1,6 +1,23 @@
+import { Redirect, useHistory } from "react-router-dom";
+import { useState } from "react";
+
+import {auth} from "../firebase";
+import { useSelector } from "react-redux";
+
 const SignIn = () => {
+  let history = useHistory();
+
+  let userCredentials=useSelector(state=>state.user);
+  // console.log("***"+userCredentials.email+"***"+userCredentials.password);
+
+  const [Credentials, SetCredentials] = useState({
+    email: "",
+    password: "",
+    confirmPass: "",
+  });
   return (
     <>
+    { userCredentials?<Redirect to="/"/>:"" }
       <div>
         <div className="h-screen w-full flex justify-center items-center bg-BackImg1 bg-cover">
           <div className="w-11/12 sm:w-8/12 md:w-5/12 lg:w-8/12 h-4/5 shadow-lg flex">
@@ -18,6 +35,13 @@ const SignIn = () => {
                     type="email"
                     className="w-full h-8 rounded border-none pl-2 outline-none"
                     placeholder="Enter Email"
+                    value={Credentials.email}
+                    onChange={(e) =>
+                      SetCredentials({
+                        ...Credentials,
+                        email: e.currentTarget.value,
+                      })
+                    }
                   />
                 </div>
                 <div className="w-full">
@@ -26,6 +50,13 @@ const SignIn = () => {
                     type="password"
                     className="w-full h-8 rounded border-none pl-2 outline-none"
                     placeholder="Password"
+                    value={Credentials.password}
+                    onChange={(e) =>
+                      SetCredentials({
+                        ...Credentials,
+                        password: e.currentTarget.value,
+                      })
+                    }
                   />
                 </div>
                 <div className="w-full">
@@ -34,15 +65,29 @@ const SignIn = () => {
                     type="password"
                     className="w-full h-8 rounded border-none pl-2 outline-none"
                     placeholder="Re-enter Password"
+                    value={Credentials.confirmPass}
+                    onChange={(e) =>
+                      SetCredentials({
+                        ...Credentials,
+                        confirmPass: e.currentTarget.value,
+                      })
+                    }
                   />
                 </div>
-                <button className=" mt-4 w-3/5 h-8 p-3 flex justify-center  items-center rounded bg-BabyPink border-none outline-none text-MateBlack font-semibold ">
+                <button className=" mt-4 w-3/5 h-8 p-3 flex justify-center  items-center rounded bg-BabyPink border-none outline-none text-MateBlack font-semibold " onClick={async()=>{
+                  if(Credentials.password===Credentials.confirmPass){
+                    await auth.createUserWithEmailAndPassword(Credentials.email,Credentials.password);
+                  }
+                }}  >
                   SignUp
                 </button>
                 <div className="mt-8 text-white flex justify-center">
                   <span class="material-icons-outlined">arrow_back</span>
                   Back to
-                  <span className="text-BabyPink font-semibold ml-1 cursor-pointer">
+                  <span
+                    className="text-BabyPink font-semibold ml-1 cursor-pointer"
+                    onClick={() => history.push("/Login")}
+                  >
                     LogIn
                   </span>
                 </div>
