@@ -17,7 +17,11 @@ module.exports = {
         BackImg1:
           "linear-gradient(to right bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.1)),url('https://thumbs.dreamstime.com/b/white-purple-abstract-background-design-white-purple-abstract-background-design-white-modern-background-138453758.jpg')",
         TempBackImg:
-          "url('https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/f6d09853-3162-42dd-bc42-a2d3c11096f1.jpg')",
+          "url('http://localhost:3000/FadeInBackground.svg')",
+        TempBackImg2:
+          "url('http://localhost:3000/backImg.svg')",
+        ProfileBackImg:
+        "url('https://i.pinimg.com/564x/1d/4b/36/1d4b36ed161c892f7556dd8bc8424231.jpg')",
       }),
       zIndex: {
         m1: "-1",

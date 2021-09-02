@@ -1,13 +1,11 @@
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import { useHistory } from "react-router";
-import { auth } from "../firebase";
 const Home = () => {
   let history=useHistory();
   return (
     <>
       <NavBar type="Home" />
-      <button onClick={()=>{auth.signOut(); history.push("/Login")}}>SignOut</button>
       <div className="h-auto flex flex-col">
         <div className="h-screen bg-FaceColor flex">
           <div className="h-full w-1/2 p-10 font-sans">
