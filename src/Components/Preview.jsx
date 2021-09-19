@@ -1,46 +1,24 @@
-import { useSelector } from "react-redux";
+import CodeA from "./Templatecss/CodeA";
+import CodeB from "./Templatecss/CodeB";
+import CodeC from "./Templatecss/CodeC";
+import CodeD from "./Templatecss/CodeD";
+import CodeE from "./Templatecss/CodeE";
+import CodeF from "./Templatecss/CodeF";
+import CodeG from "./Templatecss/CodeG";
+import CodeH from "./Templatecss/CodeH";
 
-const Preview = () => {
-  let { Fname, Lname, ProfSum, Email, Phone, City, State, Country, Pincode } =
-    useSelector((state) => state.personalDetails);
-  let {
-    CollegeName,
-    Degree,
-    Year,
-    Cgpa,
-    Sname12,
-    Sname12Year,
-    Sname12Board,
-    Sname12Per,
-    Sname10,
-    Sname10Year,
-    Sname10Board,
-    Sname10Per,
-  } = useSelector((state) => state.Education);
-  //let skillObj = useSelector((state) => state.Skills);
-  //let Projects = useSelector((state) => state.Projects);
+const Preview = ({idx}) => {
 
-  let state = useSelector((state) => state.Achievements);
-
-  return (
-    <>
-      <div className="h-screen w-full bg-pink-700 text-white font-semibold flex flex-col">
-        <span>{Fname}</span>
-        <span>{Lname}</span>
-        <span>{ProfSum}</span>
-        <span>{Email}</span>
-        <span>{Phone}</span>
-        <span>{City}</span>
-        <span>{State}</span>
-        <span>{Country}</span>
-        <span>{Pincode}</span>
-        <span>
-          {CollegeName},{Degree},{Year},{Cgpa},{Sname12},{Sname12Year},
-          {Sname12Board},{Sname12Per},{Sname10},{Sname10Year},{Sname10Board},
-          {Sname10Per}
-        </span>
-      </div>
-    </>
-  );
+    switch(idx){
+      case '0': return <CodeA/>
+      case '1': return <CodeB/>
+      case '2': return <CodeC/>
+      case '3': return <CodeD/>
+      case '4': return <CodeE/>
+      case '5': return <CodeF/>
+      case '6': return <CodeG/>
+      case '7': return <CodeH/>
+      default:return ""
+    }
 };
 export default Preview;

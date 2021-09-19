@@ -1,16 +1,18 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
+import { useParams } from "react-router";
 import { SET_PROJECT_DETAILS } from "../redux/action/ResumeDetail_action";
 import Preview from "./Preview";
 
 const ProjectDetails = () => {
   let history = useHistory();
   let dispatch = useDispatch();
+  let {cidx}=useParams();
   let StoredProjectArr=useSelector(state=>state.Projects);
   return (
     <>
       <div className="h-screen w-full flex">
-        <div className="h-full w-1/2 p-3 flex justify-center items-center bg-gray-200">
+        <div className="h-full w-1/2 p-3 flex justify-center items-center">
           <div className="h-auto w-4/5 bg-white rounded-md shadowIO pl-4">
             <h1 className="text-center text-purple-400">Projects</h1>
             { StoredProjectArr.map((ValObj, idx) => {
@@ -104,7 +106,7 @@ const ProjectDetails = () => {
             <div className="h-1/5 w-full my-4 flex justify-between">
               <button
                 className="h-9 w-20 flex items-center border-none   bg-purple-400 text-white font-semibold rounded-md ml-7"
-                onClick={() => history.push("/Skills")}
+                onClick={() => history.push(`/Skills/${cidx}`)}
               >
                 <span class="material-icons-outlined">keyboard_backspace</span>
                 Back
@@ -112,7 +114,7 @@ const ProjectDetails = () => {
 
               <button
                 className="h-9 w-20 flex items-center border-none   bg-purple-400 text-white font-semibold rounded-md mr-7"
-                onClick={() => history.push("/Achievements")}
+                onClick={() => history.push(`/Achievements/${cidx}`)}
               >
                 Next<span class="material-icons-outlined">east</span>
               </button>
@@ -120,7 +122,7 @@ const ProjectDetails = () => {
           </div>
         </div>
         <div className="h-full w-1/2">
-          <Preview />
+          <Preview idx={cidx}/>
         </div>
       </div>
     </>

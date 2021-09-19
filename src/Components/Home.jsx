@@ -1,10 +1,15 @@
 import NavBar from "./NavBar";
 import Footer from "./Footer";
-import { useHistory } from "react-router";
+import { Redirect, useHistory } from "react-router";
+import { useSelector } from "react-redux";
 const Home = () => {
   let history=useHistory();
+  let userCredentials=useSelector(state=>state.user);
   return (
     <>
+    {
+      userCredentials?"":<Redirect to="/login"/>
+    }
       <NavBar type="Home" />
       <div className="h-auto flex flex-col">
         <div className="h-screen bg-FaceColor flex">

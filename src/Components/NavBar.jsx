@@ -7,7 +7,7 @@ const NavBar = ({ type }) => {
   let [popUp,setpopUp]=useState(false);
   return (
     <div
-      className={`h-20 flex justify-between ${
+      className={`h-20 flex justify-between shadow-md ${
         type === "Home" ? "bg-MateBlack" : "bg-transparent"
       }`}
     >

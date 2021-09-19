@@ -8,5 +8,3 @@ const UserProfile=()=>{
     </>
 }
 export default UserProfile;
-
-// https://zoom.us/j/93692874562?pwd=dG43dnJzOE1PUVV3aDdDbWJDSEZCZz09

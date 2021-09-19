@@ -16,6 +16,7 @@ import Skills from "./Components/Skills";
 import ProjectDetails from "./Components/ProjectDetails";
 import Achievements from "./Components/Achievements";
 import DownLoadResume from "./Components/DownLoadResume";
+import ShowResumeLink from "./Components/ShowResumeLink";
 
 const App = () => {
   let dispatch=useDispatch();
@@ -43,13 +44,14 @@ const App = () => {
     <>
       <BrowserRouter>
         <Switch>
-          <Route path="/DownLoadResume" component={DownLoadResume}/>
-          <Route path="/Achievements" component={Achievements}/>
-          <Route path="/ProjectDetails" component={ProjectDetails}/>
-          <Route path="/Skills" component={Skills}/>
-          <Route path="/EducationDetails" component={EducationDetails}/>
+          <Route path="/ResumeBuilder/:rid" component={ShowResumeLink}/>
+          <Route path="/DownLoadResume/:cidx" component={DownLoadResume}/>
+          <Route path="/Achievements/:cidx" component={Achievements}/>
+          <Route path="/ProjectDetails/:cidx" component={ProjectDetails}/>
+          <Route path="/Skills/:cidx" component={Skills}/>
+          <Route path="/EducationDetails/:cidx" component={EducationDetails}/>
           <Route path="/Preview" component={Preview}/>
-          <Route path="/PersonalDetails" component={PeronalDetails}/>
+          <Route path="/PersonalDetails/:cidx" component={PeronalDetails}/>
           <Route path="/Profile" component={UserProfile}/>
           <Route path="/Login" component={LogIn} />
           <Route path="/SignIn" component={SignIn} />

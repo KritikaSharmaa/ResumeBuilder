@@ -17536,11 +17536,15 @@
 }
 
 .bg-TempBackImg{
-  background-image: url('http://localhost:3000/FadeInBackground.svg');
+  background-image: url('http://localhost:3000/backImg.svg');
 }
 
 .bg-TempBackImg2{
-  background-image: url('http://localhost:3000/backImg.svg');
+  background-image: url('http://localhost:3000/Temp2BackImg.jpg');
+}
+
+.bg-TempBackImg3{
+  background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/listography.png');
 }
 
 .bg-ProfileBackImg{
@@ -30565,6 +30569,27 @@
        inset 0 -3em 3em rgba(0,0,0,0.1),
              0 0  0 2px rgb(255,255,255),
              0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.slide-down{
+  animation: myAnimation 2s linear ;
+  animation-fill-mode: forwards;
+}
+
+@keyframes myAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (min-width: 640px){
@@ -48071,11 +48096,15 @@
   }
 
   .sm\:bg-TempBackImg{
-    background-image: url('http://localhost:3000/FadeInBackground.svg');
+    background-image: url('http://localhost:3000/backImg.svg');
   }
 
   .sm\:bg-TempBackImg2{
-    background-image: url('http://localhost:3000/backImg.svg');
+    background-image: url('http://localhost:3000/Temp2BackImg.jpg');
+  }
+
+  .sm\:bg-TempBackImg3{
+    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/listography.png');
   }
 
   .sm\:bg-ProfileBackImg{
@@ -78571,11 +78600,15 @@
   }
 
   .md\:bg-TempBackImg{
-    background-image: url('http://localhost:3000/FadeInBackground.svg');
+    background-image: url('http://localhost:3000/backImg.svg');
   }
 
   .md\:bg-TempBackImg2{
-    background-image: url('http://localhost:3000/backImg.svg');
+    background-image: url('http://localhost:3000/Temp2BackImg.jpg');
+  }
+
+  .md\:bg-TempBackImg3{
+    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/listography.png');
   }
 
   .md\:bg-ProfileBackImg{
@@ -109071,11 +109104,15 @@
   }
 
   .lg\:bg-TempBackImg{
-    background-image: url('http://localhost:3000/FadeInBackground.svg');
+    background-image: url('http://localhost:3000/backImg.svg');
   }
 
   .lg\:bg-TempBackImg2{
-    background-image: url('http://localhost:3000/backImg.svg');
+    background-image: url('http://localhost:3000/Temp2BackImg.jpg');
+  }
+
+  .lg\:bg-TempBackImg3{
+    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/listography.png');
   }
 
   .lg\:bg-ProfileBackImg{
@@ -139571,11 +139608,15 @@
   }
 
   .xl\:bg-TempBackImg{
-    background-image: url('http://localhost:3000/FadeInBackground.svg');
+    background-image: url('http://localhost:3000/backImg.svg');
   }
 
   .xl\:bg-TempBackImg2{
-    background-image: url('http://localhost:3000/backImg.svg');
+    background-image: url('http://localhost:3000/Temp2BackImg.jpg');
+  }
+
+  .xl\:bg-TempBackImg3{
+    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/listography.png');
   }
 
   .xl\:bg-ProfileBackImg{
@@ -170071,11 +170112,15 @@
   }
 
   .\32xl\:bg-TempBackImg{
-    background-image: url('http://localhost:3000/FadeInBackground.svg');
+    background-image: url('http://localhost:3000/backImg.svg');
   }
 
   .\32xl\:bg-TempBackImg2{
-    background-image: url('http://localhost:3000/backImg.svg');
+    background-image: url('http://localhost:3000/Temp2BackImg.jpg');
+  }
+
+  .\32xl\:bg-TempBackImg3{
+    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/listography.png');
   }
 
   .\32xl\:bg-ProfileBackImg{

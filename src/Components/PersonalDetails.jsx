@@ -1,16 +1,17 @@
 import Preview from "./Preview";
 import { SET_PERSONAL_DETAILS} from "../redux/action/ResumeDetail_action";
 import { useDispatch, useSelector} from "react-redux";
-import {useHistory} from "react-router"
+import {useHistory, useParams} from "react-router"
 
 const PersonalDetails=()=>{
     let dispatch=useDispatch();
     let history=useHistory();
+    let {cidx}=useParams();
     let { Fname, Lname, ProfSum, Email, Phone, City, State, Country, Pincode } =
     useSelector((state) => state.personalDetails);
     return<>
     <div className="h-screen w-full flex">
-        <div className="h-full w-1/2 p-3 flex justify-center items-center bg-gray-200">
+        <div className="h-full w-1/2 p-3 flex justify-center items-center">
             <div className="h-4/5 w-4/5 bg-white rounded-md shadowIO">
                 <h1 className="text-center text-purple-400">Personal Details</h1>
                 <hr className="w-4/5 mx-auto"/>
@@ -80,13 +81,13 @@ const PersonalDetails=()=>{
                     </div>
                 </div>
                 <button className="h-9 w-20 flex items-center border-none bg-purple-400 text-white font-semibold rounded-md m-4" 
-                onClick={()=>history.push("/EducationDetails")}>
+                onClick={()=>history.push(`/EducationDetails/${cidx}`)}>
                 Next<span class="material-icons-outlined">east</span>
                 </button>
             </div>
         </div>
         <div className="h-full w-1/2">
-            <Preview/>
+            <Preview idx={cidx}/>
         </div>
     </div>
     </>

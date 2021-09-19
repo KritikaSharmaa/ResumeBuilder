@@ -1,6 +1,12 @@
-export const addTemplate=(code)=>{
+export const IsLiked=(valueObj)=>{
     return{
-        type:"ADD_TEMPLATE",
-        payload:code
+        type:"IsLiked",
+        payload:valueObj,
+    }
+}
+export const IsPurchased=(valueObj)=>{
+    return{
+        type:"IsPurchased",
+        payload:valueObj,
     }
 }

@@ -1,15 +1,16 @@
 import { useDispatch, useSelector } from "react-redux";
-import { useHistory } from "react-router";
+import { useHistory, useParams } from "react-router";
 import { SET_SKILL_DETAILS } from "../redux/action/ResumeDetail_action";
 import Preview from "./Preview";
 const Skills = () => {
   let history = useHistory();
   let dispatch = useDispatch();
+  let {cidx}=useParams();
   let StoredSkills=useSelector(state=>state.Skills);
   return (
     <>
-      <div className="min-h-screen w-full flex">
-        <div className="h-auto w-1/2 p-3 flex justify-center items-center bg-gray-200 overflow-auto">
+      <div className="h-screen w-full flex">
+        <div className="h-auto w-1/2 p-3 flex justify-center items-center overflow-auto">
           <div className="h-auto w-4/5 bg-white rounded-md shadowIO">
             <h1 className="text-center text-purple-400">Skills</h1>
             <hr className="w-4/5 mx-auto" />
@@ -52,7 +53,7 @@ const Skills = () => {
               <div className="h-10 pl-1 w-full my-3 flex justify-between">
               <button
                 className="h-9 w-20 flex items-center border-none   bg-purple-400 text-white font-semibold rounded-md ml-7"
-                onClick={() => history.push("/EducationDetails")}
+                onClick={() => history.push(`/EducationDetails/${cidx}`)}
               >
                 <span class="material-icons-outlined">keyboard_backspace</span>
                 Back
@@ -60,7 +61,7 @@ const Skills = () => {
 
               <button
                 className="h-9 w-20 flex items-center border-none   bg-purple-400 text-white font-semibold rounded-md mr-7"
-                onClick={() => history.push("/ProjectDetails")}
+                onClick={() => history.push(`/ProjectDetails/${cidx}`)}
               >
                 Next<span class="material-icons-outlined">east</span>
               </button>
@@ -69,7 +70,7 @@ const Skills = () => {
           </div>
         </div>
         <div className="h-full w-1/2">
-          <Preview />
+          <Preview idx={cidx}/>
         </div>
       </div>
     </>

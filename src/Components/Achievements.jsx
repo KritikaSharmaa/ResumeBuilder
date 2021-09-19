@@ -1,16 +1,18 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
+import { useParams } from "react-router";
 import { SET_ACHIEVEMENTS_DETAILS } from "../redux/action/ResumeDetail_action";
 import Preview from "./Preview";
 
 const Achievements = () => {
   let history = useHistory();
   let dispatch = useDispatch();
+  let {cidx}=useParams();
   let StoredAch=useSelector(state=>state.Achievements)
   return (
     <>
       <div className="h-screen w-full flex">
-        <div className="h-full w-1/2 p-3 flex justify-center items-center bg-gray-200">
+        <div className="h-screen w-1/2 p-3 flex justify-center items-center">
           <div className="h-4/5 w-4/5 bg-white rounded-md shadowIO flex flex-col items-center">
             <h1 className="text-center text-purple-400">Achievements</h1>
             <hr className="w-4/5 mx-auto" />
@@ -50,7 +52,7 @@ const Achievements = () => {
             <div className="h-10 w-full my-4 flex justify-between">
               <button
                 className="h-9 w-20 flex items-center border-none   bg-purple-400 text-white font-semibold rounded-md ml-7"
-                onClick={() => history.push("/ProjectDetails")}
+                onClick={() => history.push(`/ProjectDetails/${cidx}`)}
               >
                 <span class="material-icons-outlined">keyboard_backspace</span>
                 Back
@@ -58,7 +60,7 @@ const Achievements = () => {
 
               <button
                 className="h-9 w-20 flex items-center border-none   bg-purple-400 text-white font-semibold rounded-md mr-7"
-                onClick={() => history.push("/DownLoadResume")}
+                onClick={() => history.push(`/DownLoadResume/${cidx}`)}
               >
                 Next<span class="material-icons-outlined">east</span>
               </button>
@@ -66,7 +68,7 @@ const Achievements = () => {
           </div>
         </div>
         <div className="h-full w-1/2">
-          <Preview />
+          <Preview idx={cidx}/>
         </div>
       </div>
     </>
