@@ -44,7 +44,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <Switch>
-          <Route path="/ResumeBuilder/:rid" component={ShowResumeLink}/>
+          <Route path="/ShowResumeLink" component={ShowResumeLink}/>
           <Route path="/DownLoadResume/:cidx" component={DownLoadResume}/>
           <Route path="/Achievements/:cidx" component={Achievements}/>
           <Route path="/ProjectDetails/:cidx" component={ProjectDetails}/>
