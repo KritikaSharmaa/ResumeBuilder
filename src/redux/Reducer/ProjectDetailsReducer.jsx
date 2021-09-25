@@ -9,7 +9,6 @@ export const ProjectDetailsReducer=(state=[{}],action)=>{
                 tempObj[LineType]=val;
                 temp.splice(idx,1,tempObj);
                 return temp;
-
         default:return state;
     }
 }

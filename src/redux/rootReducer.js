@@ -8,6 +8,7 @@ import { ProjectDetailsReducer } from "./Reducer/ProjectDetailsReducer";
 import AchievementDetailsReducer from "./Reducer/AchievementDetailsReducer";
 import SaveResumeReducer from "./Reducer/SaveResumeReducer";
 import DownLoadResumeReducer from "./Reducer/DownLoadResumeReducer";
+import ManageNavButtonsReducer from "./Reducer/ManageNavButtonsReducer";
 
 const rootReducer = combineReducers({
   user: UserReducer,
@@ -19,6 +20,7 @@ const rootReducer = combineReducers({
   Achievements: AchievementDetailsReducer,
   ResumeStore: SaveResumeReducer,
   isDownload:DownLoadResumeReducer,
+  ManageNav:ManageNavButtonsReducer,
 });
 
 export default rootReducer;

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { auth } from "../firebase";
+
 const LogIn = () => {
   let history = useHistory();
   const [Credentials, SetCredentails] = useState({ email: "", password: "" });
@@ -43,13 +44,13 @@ const LogIn = () => {
                   />
                 </div>
                 <button
-                  className="block mt-4 w-3/5 h-8 rounded bg-BabyPink border-none outline-none text-MateBlack font-semibold"
-                  onClick={() =>{
-                    auth.signInWithEmailAndPassword(Credentials.email,Credentials.password).then(()=>{history.push("/")})
-                      .catch((error)=>{
+                  className="block mt-4 w-3/5 h-8 rounded bg-BabyPink hover:bg-pink-300 border-none outline-none text-MateBlack font-semibold"
+                  onClick={() => {
+                    auth.signInWithEmailAndPassword(Credentials.email, Credentials.password).then(() => { history.push("/") })
+                      .catch((error) => {
                         alert(error.message);
                       })
-                    }}
+                  }}
                 >
                   Login
                 </button>
@@ -57,7 +58,9 @@ const LogIn = () => {
                   Don't have an account ?
                   <span
                     className="text-BabyPink font-semibold ml-1 cursor-pointer"
-                    onClick={() => history.push("/SignIn")}
+                    onClick={() => {
+                      history.push("/SignIn")
+                    }}
                   >
                     SignUp
                   </span>

@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 const CodeD=()=>{
     let {personalDetails,Skills,Education,Projects,Achievements}=useSelector(state=>state);
 
-    return <div className="h-screen w-11/12 text-gray-500            font-semibold flex flex-col p-2 overflow-y-auto m-4 shadow-lg">
+    return <div className="min-h-screen w-11/12 text-gray-500            font-semibold flex flex-col p-2 m-4 shadow-lg">
        
                 <div className="h-auto w-full">
                     <h3 className="h-1/5 w-full text-center mb-2 text-3xl font-extrabold capitalize">{personalDetails.Fname} {personalDetails.Lname}</h3>

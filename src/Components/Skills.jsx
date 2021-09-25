@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useHistory, useParams } from "react-router";
 import { SET_SKILL_DETAILS } from "../redux/action/ResumeDetail_action";
 import Preview from "./Preview";
+
 const Skills = () => {
   let history = useHistory();
   let dispatch = useDispatch();

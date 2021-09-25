@@ -17,6 +17,7 @@ import ProjectDetails from "./Components/ProjectDetails";
 import Achievements from "./Components/Achievements";
 import DownLoadResume from "./Components/DownLoadResume";
 import ShowResumeLink from "./Components/ShowResumeLink";
+import Cart from "./Components/Cart";
 
 const App = () => {
   let dispatch=useDispatch();
@@ -44,18 +45,19 @@ const App = () => {
     <>
       <BrowserRouter>
         <Switch>
-          <Route path="/ShowResumeLink" component={ShowResumeLink}/>
-          <Route path="/DownLoadResume/:cidx" component={DownLoadResume}/>
-          <Route path="/Achievements/:cidx" component={Achievements}/>
-          <Route path="/ProjectDetails/:cidx" component={ProjectDetails}/>
-          <Route path="/Skills/:cidx" component={Skills}/>
-          <Route path="/EducationDetails/:cidx" component={EducationDetails}/>
-          <Route path="/Preview" component={Preview}/>
-          <Route path="/PersonalDetails/:cidx" component={PeronalDetails}/>
-          <Route path="/Profile" component={UserProfile}/>
-          <Route path="/Login" component={LogIn} />
-          <Route path="/SignIn" component={SignIn} />
-          <Route path="/templates" component={Template}/>
+          <Route exact path="/Cart" component={Cart}/>
+          <Route exact path="/ShowResumeLink" component={ShowResumeLink}/>
+          <Route exact path="/DownLoadResume/:cidx" component={DownLoadResume}/>
+          <Route exact path="/Achievements/:cidx" component={Achievements}/>
+          <Route exact path="/ProjectDetails/:cidx" component={ProjectDetails}/>
+          <Route exact path="/Skills/:cidx" component={Skills}/>
+          <Route exact path="/EducationDetails/:cidx" component={EducationDetails}/>
+          <Route exact path="/Preview" component={Preview}/>
+          <Route exact path="/PersonalDetails/:cidx" component={PeronalDetails}/>
+          <Route exact path="/Profile" component={UserProfile}/>
+          <Route exact path="/Login" component={LogIn} />
+          <Route exact path="/SignIn" component={SignIn} />
+          <Route exact path="/templates" component={Template}/>
           <Route path="/" component={Home} />
         </Switch>
       </BrowserRouter>

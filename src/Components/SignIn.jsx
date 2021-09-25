@@ -1,15 +1,11 @@
 import { Redirect, useHistory } from "react-router-dom";
 import { useState } from "react";
-
 import {auth} from "../firebase";
 import { useSelector } from "react-redux";
 
 const SignIn = () => {
   let history = useHistory();
-  
   let userCredentials=useSelector(state=>state.user);
-  // console.log("***"+userCredentials.email+"***"+userCredentials.password);
-
   const [Credentials, SetCredentials] = useState({
     email: "",
     password: "",

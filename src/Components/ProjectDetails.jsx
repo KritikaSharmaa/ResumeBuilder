@@ -7,15 +7,16 @@ import Preview from "./Preview";
 const ProjectDetails = () => {
   let history = useHistory();
   let dispatch = useDispatch();
-  let {cidx}=useParams();
-  let StoredProjectArr=useSelector(state=>state.Projects);
+  let { cidx } = useParams();
+  let StoredProjectArr = useSelector(state => state.Projects);
+
   return (
     <>
       <div className="h-screen w-full flex">
         <div className="h-full w-1/2 p-3 flex justify-center items-center">
           <div className="h-auto w-4/5 bg-white rounded-md shadowIO pl-4">
             <h1 className="text-center text-purple-400">Projects</h1>
-            { StoredProjectArr.map((ValObj, idx) => {
+            {StoredProjectArr.map((ValObj, idx) => {
               return (
                 <div key={idx}>
                   <hr className="w-4/5 mx-auto" />
@@ -86,20 +87,20 @@ const ProjectDetails = () => {
             })}
 
             <button
-                className="h-9 w-16 flex items-center border-none bg-BabyBrown text-white font-semibold rounded-md mx-auto mt-4"
-                onClick={()=>{
-                  if(StoredProjectArr.length===2){ 
-                    alert("You can only add atmost 2 Projects in your resume")
-                    return;
-                  }
-                  dispatch(SET_PROJECT_DETAILS({
-                    idx:[StoredProjectArr.length],
-                    LineType:'Title',
-                    val:""
-                  }))
-                }}
-                >
-                Add
+              className="h-9 w-16 flex items-center border-none bg-BabyBrown text-white font-semibold rounded-md mx-auto mt-4"
+              onClick={() => {
+                if (StoredProjectArr.length === 2) {
+                  alert("You can only add atmost 2 Projects in your resume")
+                  return;
+                }
+                dispatch(SET_PROJECT_DETAILS({
+                  idx: [StoredProjectArr.length],
+                  LineType: 'Title',
+                  val: ""
+                }))
+              }}
+            >
+              Add
                 <span class="material-icons-outlined">add</span>
             </button>
 
@@ -122,7 +123,7 @@ const ProjectDetails = () => {
           </div>
         </div>
         <div className="h-full w-1/2">
-          <Preview idx={cidx}/>
+          <Preview idx={cidx} />
         </div>
       </div>
     </>

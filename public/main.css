@@ -17536,15 +17536,15 @@
 }
 
 .bg-TempBackImg{
-  background-image: url('http://localhost:3000/backImg.svg');
+  background-image: url('http://localhost:3000/images/backImg.svg');
 }
 
 .bg-TempBackImg2{
-  background-image: url('http://localhost:3000/Temp2BackImg.jpg');
+  background-image: url('http://localhost:3000/images/Temp2BackImg.jpg');
 }
 
 .bg-TempBackImg3{
-  background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/listography.png');
+  background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/images/listography.png');
 }
 
 .bg-ProfileBackImg{
@@ -48096,15 +48096,15 @@
   }
 
   .sm\:bg-TempBackImg{
-    background-image: url('http://localhost:3000/backImg.svg');
+    background-image: url('http://localhost:3000/images/backImg.svg');
   }
 
   .sm\:bg-TempBackImg2{
-    background-image: url('http://localhost:3000/Temp2BackImg.jpg');
+    background-image: url('http://localhost:3000/images/Temp2BackImg.jpg');
   }
 
   .sm\:bg-TempBackImg3{
-    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/listography.png');
+    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/images/listography.png');
   }
 
   .sm\:bg-ProfileBackImg{
@@ -78600,15 +78600,15 @@
   }
 
   .md\:bg-TempBackImg{
-    background-image: url('http://localhost:3000/backImg.svg');
+    background-image: url('http://localhost:3000/images/backImg.svg');
   }
 
   .md\:bg-TempBackImg2{
-    background-image: url('http://localhost:3000/Temp2BackImg.jpg');
+    background-image: url('http://localhost:3000/images/Temp2BackImg.jpg');
   }
 
   .md\:bg-TempBackImg3{
-    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/listography.png');
+    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/images/listography.png');
   }
 
   .md\:bg-ProfileBackImg{
@@ -109104,15 +109104,15 @@
   }
 
   .lg\:bg-TempBackImg{
-    background-image: url('http://localhost:3000/backImg.svg');
+    background-image: url('http://localhost:3000/images/backImg.svg');
   }
 
   .lg\:bg-TempBackImg2{
-    background-image: url('http://localhost:3000/Temp2BackImg.jpg');
+    background-image: url('http://localhost:3000/images/Temp2BackImg.jpg');
   }
 
   .lg\:bg-TempBackImg3{
-    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/listography.png');
+    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/images/listography.png');
   }
 
   .lg\:bg-ProfileBackImg{
@@ -139608,15 +139608,15 @@
   }
 
   .xl\:bg-TempBackImg{
-    background-image: url('http://localhost:3000/backImg.svg');
+    background-image: url('http://localhost:3000/images/backImg.svg');
   }
 
   .xl\:bg-TempBackImg2{
-    background-image: url('http://localhost:3000/Temp2BackImg.jpg');
+    background-image: url('http://localhost:3000/images/Temp2BackImg.jpg');
   }
 
   .xl\:bg-TempBackImg3{
-    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/listography.png');
+    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/images/listography.png');
   }
 
   .xl\:bg-ProfileBackImg{
@@ -170112,15 +170112,15 @@
   }
 
   .\32xl\:bg-TempBackImg{
-    background-image: url('http://localhost:3000/backImg.svg');
+    background-image: url('http://localhost:3000/images/backImg.svg');
   }
 
   .\32xl\:bg-TempBackImg2{
-    background-image: url('http://localhost:3000/Temp2BackImg.jpg');
+    background-image: url('http://localhost:3000/images/Temp2BackImg.jpg');
   }
 
   .\32xl\:bg-TempBackImg3{
-    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/listography.png');
+    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/images/listography.png');
   }
 
   .\32xl\:bg-ProfileBackImg{

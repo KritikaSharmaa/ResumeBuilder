@@ -2,6 +2,7 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 import { Redirect, useHistory } from "react-router";
 import { useSelector } from "react-redux";
+
 const Home = () => {
   let history=useHistory();
   let userCredentials=useSelector(state=>state.user);

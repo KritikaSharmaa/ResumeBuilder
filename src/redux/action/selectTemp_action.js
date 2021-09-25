@@ -10,3 +10,9 @@ export const IsPurchased=(valueObj)=>{
         payload:valueObj,
     }
 }
+export const IsAddedToCart=(valueObj)=>{
+    return{
+        type:"IsAddedToCart",
+        payload:valueObj,
+    }
+}

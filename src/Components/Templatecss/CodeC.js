@@ -1,9 +1,10 @@
 import { useSelector } from "react-redux";
 
 const CodeC=()=>{
+    
     let {personalDetails,Skills,Education,Projects,Achievements}=useSelector(state=>state);
 
-    return <div className="h-auto w-11/12 text-gray-700 font-semibold flex flex-col p-2 overflow-y-auto m-4 shadow-lg">
+    return <div className="min-h-screen w-11/12 text-gray-700 font-semibold flex flex-col p-2 m-4 shadow-lg">
             <div className="w-full h-auto flex mb-2">
                     <h3 className="h-20 w-5/12 flex justify-center items-center text-3xl font-extrabold mb-2 text-reds-400 uppercase">{personalDetails.Fname} {personalDetails.Lname}</h3>
                     <div className="flex flex-col items-end h-auto w-7/12">

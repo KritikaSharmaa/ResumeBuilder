@@ -1,11 +1,11 @@
 import { useSelector } from "react-redux";
 
 const CodeG=()=>{
+    
     let {personalDetails,Skills,Education,Projects,Achievements}=useSelector(state=>state);
 
-    return <div className="h-screen w-11/12 text-gray-500            font-semibold flex flex-col p-2 overflow-y-auto m-4 shadow-lg">
+    return <div className="min-h-screen w-11/12 text-gray-500            font-semibold flex flex-col p-2 m-4 shadow-lg">
             <div className="w-full h-auto flex mb-2"> 
-                {/* <img src="http://simpleicon.com/wp-content/uploads/add-user.svg" className="h-24 w-24 rounded-3xl"></img> */}
                 <div className="h-24 w-24 bg-green-400 text-3xl text-white flex justify-center items-center uppercase font-bold">{personalDetails.Fname.charAt(0)}{personalDetails.Lname.charAt(0)}</div>
                 <div className="h-auto w-11/12">
                     <h3 className="h-1/5 w-full text-center mb-2 text-3xl font-extrabold uppercase text-green-400">{personalDetails.Fname} {personalDetails.Lname}</h3>

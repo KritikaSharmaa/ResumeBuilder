@@ -13,6 +13,7 @@ let initialState={
     Sname10Per:"",
 }
 export const EducationDetailsReducer=(state=initialState,action)=>{
+    console.log(state);
     switch(action.type){
         case "SET_EDUCATION_DETAILS": return {...state,...action.payload};
         default:return state;
