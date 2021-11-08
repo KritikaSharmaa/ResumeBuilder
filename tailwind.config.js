@@ -16,7 +16,7 @@ module.exports = {
       backgroundImage: (theme) => ({
         BackImg1:
           "linear-gradient(to right bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.1)),url('https://thumbs.dreamstime.com/b/white-purple-abstract-background-design-white-purple-abstract-background-design-white-modern-background-138453758.jpg')",
-        TempBackImg3: "linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/images/listography.png')",
+        TempBackImg3: "linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('./images/listography.png')",
         ProfileBackImg:
           "url('https://i.pinimg.com/564x/1d/4b/36/1d4b36ed161c892f7556dd8bc8424231.jpg')",
 

@@ -1,19 +1,19 @@
 let initialState=[
-    {idx:0,img:"http://localhost:3000/images/skin1.svg",
+    {idx:0,
     purchase:true,  Liked:false, IsCart:false},
-    {idx:1,img:"http://localhost:3000/images/skin2.svg",
+    {idx:1,
     purchase:true,  Liked:false, IsCart:false},
-    {idx:2,img:"http://localhost:3000/images/skin3.svg",
+    {idx:2,
     purchase:true,  Liked:false, IsCart:false},
-    {idx:3,img:"http://localhost:3000/images/skin4.svg",
+    {idx:3,
     purchase:false, Liked:false, IsCart:false},
-    {idx:4,img:"http://localhost:3000/images/skin5.svg",
+    {idx:4,
     purchase:false, Liked:false, IsCart:false},
-    {idx:5,img:"http://localhost:3000/images/skin6.svg",
+    {idx:5,
     purchase:false, Liked:false, IsCart:false},
-    {idx:6,img:"http://localhost:3000/images/skin7.svg",
+    {idx:6,
     purchase:false, Liked:false, IsCart:false},
-    {idx:7,img:"http://localhost:3000/images/skin8.svg",
+    {idx:7,
     purchase:false, Liked:false, IsCart:false}];
 let selectTempReducer=(state=initialState,action)=>{
     console.log(state);

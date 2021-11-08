@@ -17535,16 +17535,8 @@
   background-image: linear-gradient(to right bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.1)),url('https://thumbs.dreamstime.com/b/white-purple-abstract-background-design-white-purple-abstract-background-design-white-modern-background-138453758.jpg');
 }
 
-.bg-TempBackImg{
-  background-image: url('http://localhost:3000/images/backImg.svg');
-}
-
-.bg-TempBackImg2{
-  background-image: url('http://localhost:3000/images/Temp2BackImg.jpg');
-}
-
 .bg-TempBackImg3{
-  background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/images/listography.png');
+  background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('./images/listography.png');
 }
 
 .bg-ProfileBackImg{
@@ -48095,16 +48087,8 @@
     background-image: linear-gradient(to right bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.1)),url('https://thumbs.dreamstime.com/b/white-purple-abstract-background-design-white-purple-abstract-background-design-white-modern-background-138453758.jpg');
   }
 
-  .sm\:bg-TempBackImg{
-    background-image: url('http://localhost:3000/images/backImg.svg');
-  }
-
-  .sm\:bg-TempBackImg2{
-    background-image: url('http://localhost:3000/images/Temp2BackImg.jpg');
-  }
-
   .sm\:bg-TempBackImg3{
-    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/images/listography.png');
+    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('./images/listography.png');
   }
 
   .sm\:bg-ProfileBackImg{
@@ -78599,16 +78583,8 @@
     background-image: linear-gradient(to right bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.1)),url('https://thumbs.dreamstime.com/b/white-purple-abstract-background-design-white-purple-abstract-background-design-white-modern-background-138453758.jpg');
   }
 
-  .md\:bg-TempBackImg{
-    background-image: url('http://localhost:3000/images/backImg.svg');
-  }
-
-  .md\:bg-TempBackImg2{
-    background-image: url('http://localhost:3000/images/Temp2BackImg.jpg');
-  }
-
   .md\:bg-TempBackImg3{
-    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/images/listography.png');
+    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('./images/listography.png');
   }
 
   .md\:bg-ProfileBackImg{
@@ -109103,16 +109079,8 @@
     background-image: linear-gradient(to right bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.1)),url('https://thumbs.dreamstime.com/b/white-purple-abstract-background-design-white-purple-abstract-background-design-white-modern-background-138453758.jpg');
   }
 
-  .lg\:bg-TempBackImg{
-    background-image: url('http://localhost:3000/images/backImg.svg');
-  }
-
-  .lg\:bg-TempBackImg2{
-    background-image: url('http://localhost:3000/images/Temp2BackImg.jpg');
-  }
-
   .lg\:bg-TempBackImg3{
-    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/images/listography.png');
+    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('./images/listography.png');
   }
 
   .lg\:bg-ProfileBackImg{
@@ -139607,16 +139575,8 @@
     background-image: linear-gradient(to right bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.1)),url('https://thumbs.dreamstime.com/b/white-purple-abstract-background-design-white-purple-abstract-background-design-white-modern-background-138453758.jpg');
   }
 
-  .xl\:bg-TempBackImg{
-    background-image: url('http://localhost:3000/images/backImg.svg');
-  }
-
-  .xl\:bg-TempBackImg2{
-    background-image: url('http://localhost:3000/images/Temp2BackImg.jpg');
-  }
-
   .xl\:bg-TempBackImg3{
-    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/images/listography.png');
+    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('./images/listography.png');
   }
 
   .xl\:bg-ProfileBackImg{
@@ -170111,16 +170071,8 @@
     background-image: linear-gradient(to right bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.1)),url('https://thumbs.dreamstime.com/b/white-purple-abstract-background-design-white-purple-abstract-background-design-white-modern-background-138453758.jpg');
   }
 
-  .\32xl\:bg-TempBackImg{
-    background-image: url('http://localhost:3000/images/backImg.svg');
-  }
-
-  .\32xl\:bg-TempBackImg2{
-    background-image: url('http://localhost:3000/images/Temp2BackImg.jpg');
-  }
-
   .\32xl\:bg-TempBackImg3{
-    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('http://localhost:3000/images/listography.png');
+    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.4)),url('./images/listography.png');
   }
 
   .\32xl\:bg-ProfileBackImg{

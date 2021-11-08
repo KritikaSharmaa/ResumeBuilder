@@ -3,6 +3,7 @@ import { useState } from "react";
 import { auth } from "../firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { ManageNavButtons_action } from "../redux/action/ManageNavButtons_action";
+import Logo from "../images/Logo.png";
 
 const NavBar = ({ type }) => {
   let history = useHistory();
@@ -18,7 +19,7 @@ const NavBar = ({ type }) => {
         }`}
     >
       <div className="h-full w-8/12 lg:w-4/12 flex items-center text-lg md:text-3xl font-semibold text-LightPurple ml-1 cursor-default" onClick={() => history.push("/templates")}>
-        <img src="http://localhost:3000/images/Logo.png" alt="img" className="h-8 w-8 md:h-12 md:w-12 bg-cover"></img>
+        <img src={Logo} alt="img" className="h-8 w-8 md:h-12 md:w-12 bg-cover"></img>
         Resume Builder
       </div>
       <div className="h-full w-0 lg:w-8/12 flex justify-end items-center cursor-default">
